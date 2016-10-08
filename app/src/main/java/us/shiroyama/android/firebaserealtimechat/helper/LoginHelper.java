@@ -64,6 +64,13 @@ public class LoginHelper {
         this.twitterLoginButton = twitterLoginButton;
         this.progressBar = progressBar;
 
+        if (firebaseAuth.getCurrentUser() != null) {
+            FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
+            String uid = firebaseUser.getUid();
+            activity.startActivity(ChatActivity.newIntent(activity, uid));
+            activity.finish();
+        }
+
         twitterLoginButton.setCallback(new Callback<TwitterSession>() {
             @Override
             public void success(Result<TwitterSession> result) {
