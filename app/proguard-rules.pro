@@ -36,7 +36,6 @@
 -keep public class * extends java.lang.Exception
 -keep class com.crashlytics.** { *; }
 -dontwarn com.crashlytics.**
--printmapping mapping.txt
 
 ### Otto
 -keepattributes *Annotation*
