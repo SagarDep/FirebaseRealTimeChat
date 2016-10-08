@@ -39,30 +39,39 @@ android {
         applicationId 'us.shiroyama.android.firebaserealtimechat'
         minSdkVersion 16
         targetSdkVersion 24
-        versionCode version_major * 100 + version_minor * 10 + version_patch
+        versionCode version_major * 10000 + version_minor * 100 + version_patch
         versionName "${version_major}.${version_minor}.${version_patch}"
         vectorDrawables.useSupportLibrary = true
     }
     buildTypes {
         debug {
             applicationIdSuffix '.debug'
+
             buildConfigField 'String', 'FIREBASE_STORAGE_BUCKET', "\"gs://${firebase_project_id}.appspot.com\""
             buildConfigField 'int', 'MESSAGE_LIMIT_COUNT', '15'
             buildConfigField 'boolean', 'PERSISTENCE_ENABLED', 'false'
             buildConfigField 'String', 'TWITTER_KEY', "\"${twitter_key}\""
             buildConfigField 'String', 'TWITTER_SECRET', "\"${twitter_secret}\""
             buildConfigField 'int', 'REALM_SCHEMA_VERSION', '0'
+
+            minifyEnabled false
+            shrinkResources false
+            zipAlignEnabled true
+            debuggable true
         }
         release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-
             buildConfigField 'String', 'FIREBASE_STORAGE_BUCKET', "\"gs://${firebase_project_id}.appspot.com\""
             buildConfigField 'int', 'MESSAGE_LIMIT_COUNT', '50'
             buildConfigField 'boolean', 'PERSISTENCE_ENABLED', 'true'
             buildConfigField 'String', 'TWITTER_KEY', "\"${twitter_key}\""
             buildConfigField 'String', 'TWITTER_SECRET', "\"${twitter_secret}\""
             buildConfigField 'int', 'REALM_SCHEMA_VERSION', '0'
+
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            minifyEnabled true
+            shrinkResources true
+            zipAlignEnabled true
+            debuggable false
         }
     }
 
