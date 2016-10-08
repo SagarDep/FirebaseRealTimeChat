@@ -1,5 +1,6 @@
 package us.shiroyama.android.firebaserealtimechat.activity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -47,6 +48,10 @@ public class LoginActivity extends BaseActivity {
     @OnClick(R.id.twitter_login_button)
     void onClickTwitterLoginButton(TwitterLoginButton button) {
         progressBar.setVisibility(View.VISIBLE);
+    }
+
+    public static Intent newIntent(Context context) {
+        return new Intent(context, LoginActivity.class);
     }
 
     @Override
