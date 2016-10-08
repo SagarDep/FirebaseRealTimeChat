@@ -34,12 +34,15 @@ import io.realm.Realm;
 import us.shiroyama.android.firebaserealtimechat.R;
 import us.shiroyama.android.firebaserealtimechat.fragment.MessageDeleteDialogFragment;
 import us.shiroyama.android.firebaserealtimechat.helper.AnalyticsHelper;
+import us.shiroyama.android.firebaserealtimechat.helper.BitmapHelper;
 import us.shiroyama.android.firebaserealtimechat.helper.MessageHelper;
 import us.shiroyama.android.firebaserealtimechat.helper.RemoteConfigHelper;
 import us.shiroyama.android.firebaserealtimechat.helper.StorageHelper;
 import us.shiroyama.android.firebaserealtimechat.model.LoginInfo;
 import us.shiroyama.android.firebaserealtimechat.model.Message;
 import us.shiroyama.android.firebaserealtimechat.widget.ChatAdapter;
+
+import static android.text.TextUtils.isEmpty;
 
 /**
  * Chat Activity
@@ -73,6 +76,9 @@ public class ChatActivity extends BaseActivity implements SwipeRefreshLayout.OnR
 
     @Inject
     StorageHelper storageHelper;
+
+    @Inject
+    BitmapHelper bitmapHelper;
 
     @Inject
     Realm realm;
@@ -118,7 +124,8 @@ public class ChatActivity extends BaseActivity implements SwipeRefreshLayout.OnR
                 String filePath = image.getPath();
                 Log.d(TAG, "filePath: " + filePath);
 
-                storageHelper.uploadImage(filePath);
+                String resizedPath = bitmapHelper.resize(filePath);
+                storageHelper.uploadImage(isEmpty(resizedPath) ? filePath : resizedPath, !isEmpty(resizedPath));
             }
         }
     }

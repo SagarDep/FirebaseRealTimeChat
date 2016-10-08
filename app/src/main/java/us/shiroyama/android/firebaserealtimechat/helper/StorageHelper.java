@@ -8,6 +8,7 @@ import com.google.firebase.storage.StorageReference;
 import com.squareup.otto.Bus;
 
 import java.io.BufferedInputStream;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
@@ -37,6 +38,10 @@ public class StorageHelper {
     }
 
     public void uploadImage(String filePath) {
+        uploadImage(filePath, false);
+    }
+
+    public void uploadImage(String filePath, boolean deletePath) {
         String fileName = UUID.randomUUID().toString();
         StorageReference target = storageReference
                 .child(IMG_DIR)
@@ -50,6 +55,12 @@ public class StorageHelper {
                         long totalBytes = taskSnapshot.getTotalByteCount();
                         Uri downloadUri = taskSnapshot.getDownloadUrl();
                         bus.post(new UploadSuccessEvent(fileName, totalBytes, downloadUri));
+                        if (deletePath) {
+                            Log.d(TAG, "deleting file.");
+                            File file = new File(filePath);
+                            String result = file.delete() ? "success" : "failure";
+                            Log.d(TAG, "file delete result: " + result);
+                        }
                     })
                     .addOnFailureListener(e -> Log.e(TAG, e.getMessage(), e));
         } catch (FileNotFoundException e) {
