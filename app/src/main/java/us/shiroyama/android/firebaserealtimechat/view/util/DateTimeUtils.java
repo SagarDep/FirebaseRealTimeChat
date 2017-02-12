@@ -1,4 +1,4 @@
-package us.shiroyama.android.firebaserealtimechat.util;
+package us.shiroyama.android.firebaserealtimechat.view.util;
 
 import org.threeten.bp.Instant;
 import org.threeten.bp.ZoneId;

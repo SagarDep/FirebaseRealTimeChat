@@ -1,8 +1,8 @@
 package us.shiroyama.android.firebaserealtimechat.di;
 
 import dagger.Subcomponent;
-import us.shiroyama.android.firebaserealtimechat.activity.ChatActivity;
-import us.shiroyama.android.firebaserealtimechat.activity.LoginActivity;
+import us.shiroyama.android.firebaserealtimechat.view.activity.ChatActivity;
+import us.shiroyama.android.firebaserealtimechat.view.activity.LoginActivity;
 import us.shiroyama.android.firebaserealtimechat.di.scope.ActivityScope;
 
 /**

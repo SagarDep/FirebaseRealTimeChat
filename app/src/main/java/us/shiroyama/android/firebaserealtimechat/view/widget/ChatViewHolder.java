@@ -1,4 +1,4 @@
-package us.shiroyama.android.firebaserealtimechat.widget;
+package us.shiroyama.android.firebaserealtimechat.view.widget;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -18,9 +18,9 @@ import com.squareup.picasso.Picasso;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import us.shiroyama.android.firebaserealtimechat.R;
-import us.shiroyama.android.firebaserealtimechat.model.Message;
-import us.shiroyama.android.firebaserealtimechat.model.User;
-import us.shiroyama.android.firebaserealtimechat.widget.transformation.CircleTransformation;
+import us.shiroyama.android.firebaserealtimechat.model.entity.Message;
+import us.shiroyama.android.firebaserealtimechat.model.entity.User;
+import us.shiroyama.android.firebaserealtimechat.view.widget.transformation.CircleTransformation;
 
 /**
  * ViewHolder

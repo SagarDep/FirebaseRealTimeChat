@@ -1,4 +1,4 @@
-package us.shiroyama.android.firebaserealtimechat.activity;
+package us.shiroyama.android.firebaserealtimechat.view.activity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -35,15 +35,15 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import io.realm.Realm;
 import us.shiroyama.android.firebaserealtimechat.R;
-import us.shiroyama.android.firebaserealtimechat.fragment.MessageDeleteDialogFragment;
-import us.shiroyama.android.firebaserealtimechat.helper.AnalyticsHelper;
-import us.shiroyama.android.firebaserealtimechat.helper.BitmapHelper;
-import us.shiroyama.android.firebaserealtimechat.helper.MessageHelper;
-import us.shiroyama.android.firebaserealtimechat.helper.RemoteConfigHelper;
-import us.shiroyama.android.firebaserealtimechat.helper.StorageHelper;
-import us.shiroyama.android.firebaserealtimechat.model.LoginInfo;
-import us.shiroyama.android.firebaserealtimechat.model.Message;
-import us.shiroyama.android.firebaserealtimechat.widget.ChatAdapter;
+import us.shiroyama.android.firebaserealtimechat.view.fragment.MessageDeleteDialogFragment;
+import us.shiroyama.android.firebaserealtimechat.model.helper.AnalyticsHelper;
+import us.shiroyama.android.firebaserealtimechat.model.helper.BitmapHelper;
+import us.shiroyama.android.firebaserealtimechat.model.helper.MessageHelper;
+import us.shiroyama.android.firebaserealtimechat.model.helper.RemoteConfigHelper;
+import us.shiroyama.android.firebaserealtimechat.model.helper.StorageHelper;
+import us.shiroyama.android.firebaserealtimechat.model.entity.LoginInfo;
+import us.shiroyama.android.firebaserealtimechat.model.entity.Message;
+import us.shiroyama.android.firebaserealtimechat.view.widget.ChatAdapter;
 
 import static android.text.TextUtils.isEmpty;
 

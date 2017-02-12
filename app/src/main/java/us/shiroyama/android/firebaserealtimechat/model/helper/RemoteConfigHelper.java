@@ -1,4 +1,4 @@
-package us.shiroyama.android.firebaserealtimechat.helper;
+package us.shiroyama.android.firebaserealtimechat.model.helper;
 
 import android.graphics.Color;
 import android.util.Log;

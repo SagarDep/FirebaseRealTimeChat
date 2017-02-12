@@ -1,4 +1,4 @@
-package us.shiroyama.android.firebaserealtimechat.widget;
+package us.shiroyama.android.firebaserealtimechat.view.widget;
 
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;

@@ -1,4 +1,4 @@
-package us.shiroyama.android.firebaserealtimechat.util;
+package us.shiroyama.android.firebaserealtimechat.view.util;
 
 import com.squareup.otto.Bus;
 

@@ -1,4 +1,4 @@
-package us.shiroyama.android.firebaserealtimechat.model;
+package us.shiroyama.android.firebaserealtimechat.model.entity;
 
 import com.google.firebase.database.Exclude;
 

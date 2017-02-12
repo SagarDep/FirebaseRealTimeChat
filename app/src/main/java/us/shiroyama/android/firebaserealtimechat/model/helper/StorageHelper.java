@@ -1,4 +1,4 @@
-package us.shiroyama.android.firebaserealtimechat.helper;
+package us.shiroyama.android.firebaserealtimechat.model.helper;
 
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;

@@ -1,4 +1,4 @@
-package us.shiroyama.android.firebaserealtimechat.fragment;
+package us.shiroyama.android.firebaserealtimechat.view.fragment;
 
 import android.app.Dialog;
 import android.os.Bundle;
@@ -8,7 +8,7 @@ import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AlertDialog;
 
 import us.shiroyama.android.firebaserealtimechat.R;
-import us.shiroyama.android.firebaserealtimechat.util.BusHolder;
+import us.shiroyama.android.firebaserealtimechat.view.util.BusHolder;
 
 /**
  * @author Fumihiko Shiroyama (fu.shiroyama@gmail.com)

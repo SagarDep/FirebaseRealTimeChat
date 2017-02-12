@@ -1,4 +1,4 @@
-package us.shiroyama.android.firebaserealtimechat.widget.transformation;
+package us.shiroyama.android.firebaserealtimechat.view.widget.transformation;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapShader;

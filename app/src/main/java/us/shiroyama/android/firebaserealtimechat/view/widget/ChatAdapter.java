@@ -1,4 +1,4 @@
-package us.shiroyama.android.firebaserealtimechat.widget;
+package us.shiroyama.android.firebaserealtimechat.view.widget;
 
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
@@ -14,10 +14,10 @@ import java.util.List;
 import javax.inject.Inject;
 
 import us.shiroyama.android.firebaserealtimechat.R;
-import us.shiroyama.android.firebaserealtimechat.model.LoginInfo;
-import us.shiroyama.android.firebaserealtimechat.model.Message;
-import us.shiroyama.android.firebaserealtimechat.model.MessageFrom;
-import us.shiroyama.android.firebaserealtimechat.model.MessageType;
+import us.shiroyama.android.firebaserealtimechat.model.entity.LoginInfo;
+import us.shiroyama.android.firebaserealtimechat.model.entity.Message;
+import us.shiroyama.android.firebaserealtimechat.model.entity.MessageFrom;
+import us.shiroyama.android.firebaserealtimechat.model.entity.MessageType;
 
 /**
  * Adapter

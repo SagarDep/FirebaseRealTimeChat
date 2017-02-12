@@ -1,4 +1,4 @@
-package us.shiroyama.android.firebaserealtimechat.activity;
+package us.shiroyama.android.firebaserealtimechat.view.activity;
 
 import android.support.v7.app.AppCompatActivity;
 

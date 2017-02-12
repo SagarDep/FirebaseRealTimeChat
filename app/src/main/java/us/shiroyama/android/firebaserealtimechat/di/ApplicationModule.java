@@ -22,7 +22,7 @@ import io.realm.RealmConfiguration;
 import us.shiroyama.android.firebaserealtimechat.BuildConfig;
 import us.shiroyama.android.firebaserealtimechat.R;
 import us.shiroyama.android.firebaserealtimechat.realm.MyRealmMigration;
-import us.shiroyama.android.firebaserealtimechat.util.BusHolder;
+import us.shiroyama.android.firebaserealtimechat.view.util.BusHolder;
 
 /**
  * @author Fumihiko Shiroyama (fu.shiroyama@gmail.com)

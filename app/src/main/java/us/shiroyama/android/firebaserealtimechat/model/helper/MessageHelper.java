@@ -1,4 +1,4 @@
-package us.shiroyama.android.firebaserealtimechat.helper;
+package us.shiroyama.android.firebaserealtimechat.model.helper;
 
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -31,12 +31,12 @@ import javax.inject.Inject;
 import us.shiroyama.android.firebaserealtimechat.BuildConfig;
 import us.shiroyama.android.firebaserealtimechat.R;
 import us.shiroyama.android.firebaserealtimechat.di.scope.ActivityScope;
-import us.shiroyama.android.firebaserealtimechat.fragment.MessageDeleteDialogFragment;
-import us.shiroyama.android.firebaserealtimechat.model.LoginInfo;
-import us.shiroyama.android.firebaserealtimechat.model.Message;
-import us.shiroyama.android.firebaserealtimechat.model.MessageType;
-import us.shiroyama.android.firebaserealtimechat.widget.ChatAdapter;
-import us.shiroyama.android.firebaserealtimechat.widget.ScrollEdgeListener;
+import us.shiroyama.android.firebaserealtimechat.view.fragment.MessageDeleteDialogFragment;
+import us.shiroyama.android.firebaserealtimechat.model.entity.LoginInfo;
+import us.shiroyama.android.firebaserealtimechat.model.entity.Message;
+import us.shiroyama.android.firebaserealtimechat.model.entity.MessageType;
+import us.shiroyama.android.firebaserealtimechat.view.widget.ChatAdapter;
+import us.shiroyama.android.firebaserealtimechat.view.widget.ScrollEdgeListener;
 
 /**
  * @author Fumihiko Shiroyama (fu.shiroyama@gmail.com)

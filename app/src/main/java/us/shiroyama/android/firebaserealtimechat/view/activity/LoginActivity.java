@@ -1,4 +1,4 @@
-package us.shiroyama.android.firebaserealtimechat.activity;
+package us.shiroyama.android.firebaserealtimechat.view.activity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -15,9 +15,9 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import us.shiroyama.android.firebaserealtimechat.R;
-import us.shiroyama.android.firebaserealtimechat.helper.AnalyticsHelper;
-import us.shiroyama.android.firebaserealtimechat.helper.LoginHelper;
-import us.shiroyama.android.firebaserealtimechat.helper.RemoteConfigHelper;
+import us.shiroyama.android.firebaserealtimechat.model.helper.AnalyticsHelper;
+import us.shiroyama.android.firebaserealtimechat.model.helper.LoginHelper;
+import us.shiroyama.android.firebaserealtimechat.model.helper.RemoteConfigHelper;
 
 /**
  * Login Activity

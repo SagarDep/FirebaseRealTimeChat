@@ -1,4 +1,4 @@
-package us.shiroyama.android.firebaserealtimechat.helper;
+package us.shiroyama.android.firebaserealtimechat.model.helper;
 
 import android.content.Intent;
 import android.support.annotation.NonNull;
@@ -26,10 +26,10 @@ import com.twitter.sdk.android.core.identity.TwitterLoginButton;
 import javax.inject.Inject;
 
 import io.realm.Realm;
-import us.shiroyama.android.firebaserealtimechat.activity.ChatActivity;
+import us.shiroyama.android.firebaserealtimechat.view.activity.ChatActivity;
 import us.shiroyama.android.firebaserealtimechat.di.scope.ActivityScope;
-import us.shiroyama.android.firebaserealtimechat.model.LoginInfo;
-import us.shiroyama.android.firebaserealtimechat.model.User;
+import us.shiroyama.android.firebaserealtimechat.model.entity.LoginInfo;
+import us.shiroyama.android.firebaserealtimechat.model.entity.User;
 
 /**
  * @author Fumihiko Shiroyama (fu.shiroyama@gmail.com)
