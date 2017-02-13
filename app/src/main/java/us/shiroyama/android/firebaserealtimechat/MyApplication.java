@@ -10,9 +10,9 @@ import com.twitter.sdk.android.Twitter;
 import com.twitter.sdk.android.core.TwitterAuthConfig;
 
 import io.fabric.sdk.android.Fabric;
-import us.shiroyama.android.firebaserealtimechat.di.ApplicationComponent;
-import us.shiroyama.android.firebaserealtimechat.di.ApplicationModule;
-import us.shiroyama.android.firebaserealtimechat.di.DaggerApplicationComponent;
+import us.shiroyama.android.firebaserealtimechat.di.components.ApplicationComponent;
+import us.shiroyama.android.firebaserealtimechat.di.components.DaggerApplicationComponent;
+import us.shiroyama.android.firebaserealtimechat.di.modules.ApplicationModule;
 
 /**
  * Custom Application

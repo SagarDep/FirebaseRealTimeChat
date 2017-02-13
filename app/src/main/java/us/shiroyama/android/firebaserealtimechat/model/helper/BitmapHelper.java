@@ -15,6 +15,9 @@ import java.io.InputStream;
 import java.util.UUID;
 
 import javax.inject.Inject;
+import javax.inject.Named;
+
+import us.shiroyama.android.firebaserealtimechat.di.scopes.ContextType;
 
 /**
  * @author Fumihiko Shiroyama (fu.shiroyama@gmail.com)
@@ -29,7 +32,7 @@ public class BitmapHelper {
     private final BitmapResizer bitmapResizer;
 
     @Inject
-    public BitmapHelper(Context context) {
+    public BitmapHelper(@Named(ContextType.APPLICATION) Context context) {
         this.context = context;
         this.bitmapResizer = new BitmapResizer(context);
     }

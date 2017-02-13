@@ -30,7 +30,7 @@ import javax.inject.Inject;
 
 import us.shiroyama.android.firebaserealtimechat.BuildConfig;
 import us.shiroyama.android.firebaserealtimechat.R;
-import us.shiroyama.android.firebaserealtimechat.di.scope.ActivityScope;
+import us.shiroyama.android.firebaserealtimechat.di.scopes.ActivityScope;
 import us.shiroyama.android.firebaserealtimechat.view.fragment.MessageDeleteDialogFragment;
 import us.shiroyama.android.firebaserealtimechat.model.entity.LoginInfo;
 import us.shiroyama.android.firebaserealtimechat.model.entity.Message;

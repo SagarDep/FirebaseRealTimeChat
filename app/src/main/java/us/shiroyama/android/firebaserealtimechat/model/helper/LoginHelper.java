@@ -27,7 +27,7 @@ import javax.inject.Inject;
 
 import io.realm.Realm;
 import us.shiroyama.android.firebaserealtimechat.view.activity.ChatActivity;
-import us.shiroyama.android.firebaserealtimechat.di.scope.ActivityScope;
+import us.shiroyama.android.firebaserealtimechat.di.scopes.ActivityScope;
 import us.shiroyama.android.firebaserealtimechat.model.entity.LoginInfo;
 import us.shiroyama.android.firebaserealtimechat.model.entity.User;
 

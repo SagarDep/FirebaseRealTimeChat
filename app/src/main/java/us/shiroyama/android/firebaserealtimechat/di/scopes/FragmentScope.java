@@ -1,4 +1,4 @@
-package us.shiroyama.android.firebaserealtimechat.di.scope;
+package us.shiroyama.android.firebaserealtimechat.di.scopes;
 
 import java.lang.annotation.Retention;
 
@@ -7,7 +7,7 @@ import javax.inject.Scope;
 import static java.lang.annotation.RetentionPolicy.RUNTIME;
 
 /**
- * {@link android.app.Fragment}スコープを表現する{@link Scope}
+ * Fragment {@link Scope}
  *
  * @author Fumihiko Shiroyama (fu.shiroyama@gmail.com)
  */
